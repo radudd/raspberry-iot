@@ -6,7 +6,7 @@ class SensorError(Exception):
 
 def measure():
   sensor = Adafruit_DHT.DHT22
-  pin = 4
+  pin = 16
 
   for i in range(3):
     humidity, temperature = Adafruit_DHT.read(sensor, pin)
@@ -14,3 +14,6 @@ def measure():
       return humidity, temperature
     continue
   raise SensorError
+
+if __name__ == "__main__":
+  print(measure())

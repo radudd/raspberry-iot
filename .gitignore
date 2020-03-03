@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+resources/config.yaml
+venv
+influx_client.bk.py
